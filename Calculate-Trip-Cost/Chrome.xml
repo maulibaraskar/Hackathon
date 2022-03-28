@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Chrome_Suite" preserve-order="true">
+	<parameter name="browser" value="chrome" />
+	<suite-files>
+		<suite-file path="Smoke.xml" />
+		<suite-file path="Regression.xml" />
+	</suite-files>
+</suite>
