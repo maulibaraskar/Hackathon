@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Regression_Suite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <test name="Regresion_Test(failed)" parallel="none">
+    <classes>
+      <class name="com.hackathon.Tests.TS_HolidayHomesInvalid">
+        <methods>
+          <include name="exitBrowser"/>
+          <include name="TC_initiateHolidayHomesInvalid"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.hackathon.Tests.TS_HolidayHomesInvalid -->
+      <class name="com.hackathon.Tests.TS_Restaurants">
+        <methods>
+          <include name="TC_EnterCity"/>
+          <include name="TC_Reservations"/>
+          <include name="TC_Results"/>
+          <include name="TC_initiateCourse"/>
+        </methods>
+      </class> <!-- com.hackathon.Tests.TS_Restaurants -->
+    </classes>
+  </test> <!-- Regresion_Test(failed) -->
+</suite> <!-- Failed suite [Regression_Suite] -->

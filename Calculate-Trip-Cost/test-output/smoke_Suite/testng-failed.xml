@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [smoke_Suite]" parallel="none">
+  <parameter name="browser" value="chrome"/>
+  <test name="Smoke_Test(failed)" parallel="none">
+    <classes>
+      <class name="com.hackathon.Tests.TS_HolidayHome">
+        <methods>
+          <include name="TC_initiateHolidayHomes"/>
+          <include name="TC_Elevator"/>
+          <include name="TC_PrintOutput"/>
+          <include name="exitBrowser"/>
+          <include name="startTest"/>
+        </methods>
+      </class> <!-- com.hackathon.Tests.TS_HolidayHome -->
+      <class name="com.hackathon.Tests.TS_Cruise">
+        <methods>
+          <include name="TC_CruiseType"/>
+          <include name="TC_GetDetails"/>
+          <include name="TC_initiateCourse"/>
+          <include name="TC_SelectCruiseVar"/>
+          <include name="TC_ClickSub"/>
+        </methods>
+      </class> <!-- com.hackathon.Tests.TS_Cruise -->
+    </classes>
+  </test> <!-- Smoke_Test(failed) -->
+</suite> <!-- Failed suite [smoke_Suite] -->
